@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site content (services, prices, team, reviews, contact) lives in `src/lib/site-data.ts`; section components in `src/components/site/` only render it. Why: one place to edit business info, and price tests read from it.
+- The site is a single page (`src/routes/index.tsx`) with anchor-linked sections, because it is a scrollable digital menu.

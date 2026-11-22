@@ -73,7 +73,7 @@ export function ServicesMenu() {
                   onFocus={() => setActive(i)}
                   tabIndex={0}
                   className={cn(
-                    "group relative grid grid-cols-[auto_1fr] gap-5 border-b border-border py-8 outline-none transition-colors duration-500 md:gap-8 md:py-10",
+                    "group relative grid grid-cols-[auto_minmax(0,1fr)] gap-4 sm:gap-5 border-b border-border py-8 outline-none transition-colors duration-500 md:gap-8 md:py-10",
                     i === 0 && "border-t",
                   )}
                 >
@@ -83,7 +83,7 @@ export function ServicesMenu() {
                       i === active && "lg:scale-y-100",
                     )}
                   />
-                  <div className="relative size-20 overflow-hidden rounded-2xl md:size-24 lg:hidden">
+                  <div className="relative size-16 overflow-hidden rounded-xl sm:size-20 md:size-24 lg:hidden">
                     <img src={s.image} alt="" loading="lazy" className="size-full object-cover" />
                   </div>
                   <span
@@ -95,13 +95,13 @@ export function ServicesMenu() {
                     {s.number}
                   </span>
 
-                  <div>
-                    <div className="flex items-baseline gap-4">
-                      <h3 className="font-display text-2xl font-semibold uppercase tracking-tight md:text-4xl">
+                  <div className="min-w-0">
+                    <div className="flex items-baseline gap-3 md:gap-4">
+                      <h3 className="font-display text-xl font-semibold uppercase tracking-tight sm:text-2xl md:text-4xl">
                         {s.name}
                       </h3>
                       <span className="leader hidden sm:block" />
-                      <p className="ml-auto shrink-0 font-display text-2xl font-semibold text-primary md:text-4xl">
+                      <p className="ml-auto shrink-0 font-display text-lg font-semibold text-primary sm:text-2xl md:text-4xl">
                         {formatPrice(s.price)}
                       </p>
                     </div>

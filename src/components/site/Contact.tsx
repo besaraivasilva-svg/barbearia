@@ -7,7 +7,7 @@ import { Reveal } from "./Reveal";
 
 export function Contact() {
   return (
-    <section id="contato" className="relative py-24 md:py-36">
+    <section id="contato" className="relative pb-20 pt-24 md:pb-28 md:pt-36">
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card p-8 shadow-elegant md:p-14">
           <div className="pointer-events-none absolute -right-32 -top-32 size-96 rounded-full bg-primary/15 blur-[120px]" />
@@ -56,7 +56,7 @@ export function Contact() {
               <Reveal delay={250} className="rounded-2xl border border-border bg-background/50 p-6">
                 <Phone className="size-5 text-primary" />
                 <p className="mt-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">Telefone</p>
-                <p className="mt-2 font-display text-lg font-semibold">{contact.phone}</p>
+                <p className="mt-2 whitespace-nowrap font-display text-lg font-semibold">{contact.phone}</p>
                 <p className="mt-1 text-sm text-muted-foreground">{contact.instagram}</p>
               </Reveal>
               <Reveal delay={350} className="rounded-2xl border border-border bg-background/50 p-6 sm:col-span-2">

@@ -36,11 +36,11 @@ export function Manifesto() {
           </Reveal>
 
           <Reveal delay={300}>
-            <dl className="mt-14 grid grid-cols-3 gap-4 border-t border-border pt-10">
+            <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-border pt-10">
               {stats.map((s) => (
                 <div key={s.label}>
                   <dt className="sr-only">{s.label}</dt>
-                  <dd className="font-display text-3xl font-semibold tracking-tight md:text-5xl">
+                  <dd className="font-display text-2xl font-semibold tracking-tight sm:text-3xl xl:text-4xl">
                     {s.value}
                     {s.suffix ? (
                       <span className="ml-1 font-serif text-xl font-normal italic text-primary md:text-2xl">

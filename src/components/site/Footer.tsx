@@ -58,7 +58,7 @@ export function Footer() {
       </div>
 
       <div className="relative mt-20 select-none" aria-hidden="true">
-        <p className="font-display-wide whitespace-nowrap text-center text-[17.5vw] font-bold leading-[0.8] text-foreground/[0.06]">
+        <p className="font-display-wide whitespace-nowrap text-center text-[12.5vw] font-bold leading-[0.8] text-foreground/[0.06]">
           PRIME<span className="font-serif font-normal normal-case italic text-primary/30">barber</span>
         </p>
       </div>
