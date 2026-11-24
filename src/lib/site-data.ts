@@ -39,7 +39,7 @@ export const services: Service[] = [
     description:
       "Desenho e alinhamento da barba, toalha quente, navalha e óleo hidratante para um acabamento impecável.",
     duration: "30 min",
-    price: 20,
+    price: 25,
     image: galleryBeard,
   },
   {
